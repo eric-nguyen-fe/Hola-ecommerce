@@ -1,0 +1,11 @@
+.product-card {
+    text-align: center;
+    margin-bottom: 30px;
+
+    &__image {
+        padding-top: 50%;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+}

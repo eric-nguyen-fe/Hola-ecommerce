@@ -1,0 +1,11 @@
+.policy-card {
+    @include flex(center, flex-start);
+    padding: 20px;
+    padding-left: 0;
+    box-shadow: $box-shadow;
+    transition: transform .5s ease;
+
+    &:hover {
+        transform: translateY(-20%);
+    }
+}

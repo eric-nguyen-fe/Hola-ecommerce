@@ -1,0 +1,7 @@
+.catalog {
+    @include flex(flex-start, flex-start);
+
+    &__filter {
+        width: 20%;
+    }
+}

@@ -1,0 +1,1 @@
+const img1 = require("../images/slider/slide_1.png").default

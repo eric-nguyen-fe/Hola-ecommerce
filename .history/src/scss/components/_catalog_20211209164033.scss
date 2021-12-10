@@ -1,0 +1,11 @@
+.catalog {
+    @include flex(flex-start, flex-start);
+
+    &__filter {
+        width: 20%;
+    }
+
+    &__content {
+        flex-grow: 1;
+    }
+}

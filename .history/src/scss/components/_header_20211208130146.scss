@@ -1,0 +1,67 @@
+.header {
+    background-color: $main-bg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    height: $header-height;
+
+    .container {
+        height: 100%;
+    }
+
+    &__logo {
+        @include flex (center, center);
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+
+        img {
+            height: 38px;
+        }
+    }
+
+    &__menu {
+        @include flex(center, space-between);
+        height: 100%;
+        font-size: 1.5rem;
+
+        &__item ~ &__item {
+            margin-left: 39px;
+        }
+
+        &__item.active {
+            font-weight: 600;
+            color: $main-color;
+        }
+
+        &__item:hover {
+            color: $main-color;
+        }
+
+        &__left, 
+        &__right {
+            @include flex(center, center);
+            height: 100%;
+        }
+
+        &__right {
+            font-size: 2.25rem;
+
+            &__item {
+                @include flex(center, center);
+            }
+        }
+
+        &__mobile-toggle {
+            display: none;
+        }
+
+        &__left {
+            &__close{
+                display: none;
+            }
+        }
+    }
+}

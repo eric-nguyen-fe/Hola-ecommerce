@@ -1,0 +1,15 @@
+.catalog {
+    @include flex(flex-start, flex-start);
+
+    &__filter {
+        width: 20%;
+
+        @include tablet {
+            width: unset;
+        }
+    }
+
+    &__content {
+        flex-grow: 1;
+    }
+}

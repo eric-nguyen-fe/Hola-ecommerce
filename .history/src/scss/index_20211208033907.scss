@@ -1,0 +1,8 @@
+@import "./variables";
+@import "./mixins";
+@import "./base";
+
+declare module '*.scss' {
+    const content: string;
+    export default content;
+  }
